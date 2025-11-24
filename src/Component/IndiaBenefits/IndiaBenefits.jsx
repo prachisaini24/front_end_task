@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./IndiaBenefits.css";
 
-const bgImg = "public/images/IndiaBenefits-bg.png"; // Place this image in public/images/
+const bgImg = "public/images/IndiaBenefits-bg.png";  // Place this image in public/images/
 
 const benefits = [
   {
@@ -68,7 +68,7 @@ const IndiaBenefits = () => {
     <section className="indiabenefits-bg">
       <div className="indiabenefits-content">
         <div className="indiabenefits-left">
-          <img src={bgImg} alt="India benefit illustration" className="indiabenefits-img" />
+          <img src = {bgImg} alt="India benefit illustration" className="indiabenefits-img" />
           <h2 className="indiabenefits-title">
             Why Hire Software Developers<br/>In India?
           </h2>

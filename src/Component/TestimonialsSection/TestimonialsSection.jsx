@@ -3,28 +3,28 @@ import "./TestimonialsSection.css";
 
 const testimonials = [
   {
-    img: "public/images/client 1.png",
+    img:"public/images/client 1.png",
     name: "Krish Bruynson",
     role: "Director, Starlofi",
     video: "https://example.com/video1.mp4",
     stars: 5
   },
   {
-    img: "public/images/client 2.png",
+    img: "/images/client 2.png",
     name: "Krish Bruynson",
     role: "Director, Starlofi",
     video: "https://example.com/video2.mp4",
     stars: 5
   },
   {
-    img: "public/images/client 3.png",
+    img: "/images/client 3.png",
     name: "Krish Bruynson",
     role: "Director, Starlofi",
     video: "https://example.com/video3.mp4",
     stars: 5
   },
   {
-    img: "public/images/client 4.png",
+     img: "/images/client 4.png",
     name: "Krish Bruynson",
     role: "Director, Starlofi",
     video: "https://example.com/video4.mp4",

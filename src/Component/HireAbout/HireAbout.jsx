@@ -1,5 +1,10 @@
 import React from "react";
 import "./HireAbout.css";
+import developerImg from '../../assets/obj_1.png';
+import codingDeskImg from '../../assets/obj_2.png';
+import greenTick from '../../assets/Green TIck.png';
+import pinkTick from '../../assets/Red TIck.png';
+
 
 const HireAbout = () => (
   <div className="hire-bg">
@@ -14,19 +19,19 @@ const HireAbout = () => (
 
     <div className="hireabout-main">
       <div className="hireabout-col-left">
-        <img src="src\assets\obj_1.png" alt="Developer" className="hireabout-img1" />
+        <img src= {developerImg} alt="Developer" className="hireabout-img1" />
         <div className="hireabout-list-block">
           <div className="hireabout-title">Rigorous Vetting</div>
           <ul className="hireabout-list">
             <li>
-              <img src="src\assets\Green TIck.png" alt="Green Tick" className="hire-tick"/>
+              <img src={greenTick}  alt="Green Tick" className="hire-tick"/>
               <div>
                 <span className="hire-label">5+ hours of tests and interviews</span>
                 <div className="hire-desc">Hire the Top 1% Of 1.5 Million+ Developers From 150+ Countries Who Have Applied To Turing.</div>
               </div>
             </li>
             <li>
-              <img src="src\assets\Red TIck.png" alt="Pink Tick" className="hire-tick-pink"/>
+              <img src= {pinkTick} alt="Pink Tick" className="hire-tick-pink"/>
               <div>
                 <span className="hire-label">Seniority tests</span>
                 <div className="hire-desc">Hire the Top 1% Of 1.5 Million+ Developers From 150+ Countries Who Have Applied To Turing.</div>
@@ -40,21 +45,21 @@ const HireAbout = () => (
         <div className="hireabout-title vetting">High Quality/Cost Ratio</div>
         <ul className="hireabout-list">
           <li>
-            <img src="src\assets\Green TIck.png" alt="Green Tick" className="hire-tick"/>
+            <img src={greenTick}  alt="Green Tick" className="hire-tick"/>
             <div>
               <span className="hire-label">Hire Silicon Valley Caliber At Half The Cost</span>
               <div className="hire-desc">Hire the Top 1% Of 1.5 Million+ Developers From 150+ Countries Who Have Applied To Turing.</div>
             </div>
           </li>
           <li>
-            <img src="src\assets\Red TIck.png" alt="Pink Tick" className="hire-tick-pink"/>
+            <img src={pinkTick} alt="Pink Tick" className="hire-tick-pink"/>
             <div>
               <span className="hire-label">100+ Skills Available</span>
               <div className="hire-desc">Hire the Top 1% Of 1.5 Million+ Developers From 150+ Countries Who Have Applied To Turing.</div>
             </div>
           </li>
         </ul>
-        <img src="src\assets\obj_2.png" alt="Coding Desk" className="hireabout-img2" />
+        <img src= {codingDeskImg} alt="Coding Desk" className="hireabout-img2" />
       </div>
     </div>
   </section>
