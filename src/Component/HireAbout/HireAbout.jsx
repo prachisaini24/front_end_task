@@ -2,8 +2,9 @@ import React from "react";
 import "./HireAbout.css";
 import developerImg from '../../assets/obj_1.png';
 import codingDeskImg from '../../assets/obj_2.png';
-import greenTick from '../../assets/Green TIck.png';
-import pinkTick from '../../assets/Red TIck.png';
+import greenTick from '../../assets/Green Tick.png';
+import pinkTick from '../../assets/Red Tick.png';
+
 
 
 const HireAbout = () => (
