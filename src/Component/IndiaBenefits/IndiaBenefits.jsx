@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./IndiaBenefits.css";
 
-const bgImg = "public/images/IndiaBenefits-bg.png";  // Place this image in public/images/
+const bgImg = "/images/IndiaBenefits-bg.png";  // Place this image in public/images/
 
 const benefits = [
   {

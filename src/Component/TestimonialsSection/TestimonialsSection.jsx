@@ -3,7 +3,7 @@ import "./TestimonialsSection.css";
 
 const testimonials = [
   {
-    img:"public/images/client 1.png",
+    img:"/images/client 1.png",
     name: "Krish Bruynson",
     role: "Director, Starlofi",
     video: "https://example.com/video1.mp4",
