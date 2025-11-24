@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.hire-bg{
+background: linear-gradient(315deg, #FAD6FF 0%, #E9FFF6 100%);
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+.hire-about {
+  background: #ffffff62;
+  border-radius: 13px;
+  max-width: 1300px;
+  margin: auto auto 0 auto;
+  box-shadow: 0 8px 32px rgba(60, 90, 90, 0.06);
+  padding: 56px 44px 42px 44px;
+}
+.hireabout-header {
+  text-align: center;
+ 
+}
+.hireabout-header h2 {
+  font-weight: 700;
+  font-size: 2.08rem;
+  color: #181b36;
+  margin-bottom: 8px;
+}
+.hireabout-subtext {
+  font-size: 1.12rem;
+  color: #7d85a5;
+}
+.hireabout-subsub {
+  font-size: 0.99rem;
+  color: #b3b6c6;
+}
+.hireabout-main {
+  display: flex;
+  gap: 38px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hireabout-col-left,
+.hireabout-col-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hireabout-img1 {
+  max-width: 400px;
+  width: 350px;
+  margin-bottom: 25px;
+  align-self: center;
+
+
+}
+.hireabout-title {
+  font-size: 1.27rem;
+  font-weight: 600;
+  color: #212a3a;
+  margin-bottom: 13px;
+  letter-spacing: 0.012em;
+}
+.hireabout-title.vetting {
+  margin-top: 25px;
+  margin-bottom: 14px;
+}
+.hireabout-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hireabout-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 23px;
+}
+.hire-tick {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #35c469;
+  margin-top: 8px;
+}
+.hire-tick-pink {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e36b76;
+  margin-top: 8px;
+}
+.hire-label {
+  font-weight: 200;
+  font-size: 1.08rem;
+  color: #23223c;
+}
+.hire-desc {
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: #7a7f93;
+  font-weight: 400;
+}
+.hireabout-img2 {
+  max-width: 400px;
+  width: 450px;
+  margin-top: 18px;
+  align-self: center;
+}
+
+@media (max-width:1000px) {
+  .hire-about {padding: 14px 10px;}
+  .hireabout-main {flex-direction: column; gap: 20px;}
+  .hireabout-img1, .hireabout-img2 {max-width: 300px;}
+}
+
+/* additional features */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover lift effect */
+.hire-about:hover {
+  box-shadow: 0 12px 40px rgba(60, 90, 90, 0.12);
+}
+/* Hover color glow effect */
+.hireabout-header h2:hover {
+  color: #2fc980;
+}
+
+.hireabout-subtext,
+.hireabout-subsub {
+  animation: fadeUp 1s ease-out;
+}
+
+
+
+/* Image smooth zoom on hover */
+.hireabout-img1,
+.hireabout-img2 {
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.hireabout-img1:hover,
+.hireabout-img2:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.hireabout-title {
+  font-size: 1.27rem;
+  font-weight: 600;
+  color: #212a3a;
+  margin-bottom: 13px;
+  letter-spacing: 0.012em;
+  transition: color 0.3s ease;
+}
+
+.hireabout-title:hover {
+  color: #35c469;
+}
+
+
+/* List animation (staggered effect) */
+.hireabout-list li {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+
+.hire-label:hover {
+  color: #2fc980;
+}
+
+.hire-desc {
+  transition: color 0.3s ease;
+}
+
+
+@media (max-width:1000px) {
+  .hire-about {padding: 14px 10px;}
+  .hireabout-main {flex-direction: column; gap: 20px;}
+  .hireabout-img1, .hireabout-img2 {max-width: 300px;}
+}

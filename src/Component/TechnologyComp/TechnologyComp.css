@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.techgrid-bg-gradient {
+  width: 100%;
+  padding: 55px 0;
+  background: linear-gradient(135deg, #FCE7FC 0%, #E4FFF4 100%);
+  /* Replace gradient colors with your Figma colors if you want exact match */
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+
+.techgrid-section {
+  /* background: linear-gradient(135deg, #FCE7FC 0%, #E4FFF4 100%);; */
+  background-color: rgba(255, 255, 255, 0.471);
+  max-width: 1200px;
+  margin: 45px auto 0 auto;
+  padding: 42px 32px 40px 32px;
+  border-radius: 18px;
+  box-shadow: 0 10px 36px rgba(80, 110, 140, 0.07);
+}
+
+.techgrid-title {
+  text-align: center;
+  font-size: 2.08rem;
+  font-weight: 700;
+  margin-bottom: 13px;
+  color:#233A41;
+}
+
+.techgrid-sub {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #233A41;
+  margin-bottom: 6px;
+}
+.techgrid-subsub {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #132A31;
+  margin-bottom: 26px;
+}
+
+.techgrid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 26px;
+  margin-top: 18px;
+}
+.techgrid-card {
+  background: #f7f8fc;
+  border-radius: 11px;
+  box-shadow: 0 2px 8px rgba(80, 130, 180, 0.07);
+  padding: 29px 16px 21px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  /* border: 2.4px solid transparent; */
+  position: relative;
+}
+.techgrid-card.hovered {
+  transform: translateY(-6px) ;
+  box-shadow: 0 12px 44px rgba(60, 180, 170, 0.11);
+  border:1px solid #1dcc92;
+ 
+}
+.techgrid-blue    { background: #e7f1fa; border-bottom: 4px solid #b4d9f8;}
+.techgrid-yellow  { background: #fff2de; border-bottom: 4px solid #ffe4b1;}
+.techgrid-pink    { background: #fae2ea; border-bottom: 4px solid #fbc4df;}
+.techgrid-lightblue  { background: #e9f6fe; border-bottom: 4px solid #d3edfa;}
+.techgrid-lightyellow{ background: #f9f9e1; border-bottom: 4px solid #f7f7b4;}
+.techgrid-lightpink  { background: #f7e7ea; border-bottom: 4px solid #edc6d7;}
+
+.techgrid-icon {
+  width: 39px;
+  height: 39px;
+  margin-bottom: 15px;
+}
+.techgrid-icon img {
+  width: 100%;
+  height: auto;
+}
+.techgrid-head {
+  font-size: 1.12rem;
+  font-weight: bold;
+  color: #1e233b;
+  margin-bottom: 12px;
+  margin-top: 6px;
+}
+.techgrid-row {
+  font-size: 0.75rem;
+  color: #000000;
+  margin-bottom: 4px;
+  font-weight: 500;
+  word-spacing: 0.6rem;
+  letter-spacing: 0.05rem;
+}
+
+@media (max-width:900px) {
+  .techgrid-section {padding: 12px 2px;}
+  .techgrid-cards {grid-template-columns: 1fr;gap:18px;}
+}

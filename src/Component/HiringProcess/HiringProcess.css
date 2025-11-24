@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+.hiringprocess-bg {
+  width: 100%;
+  padding: 52px 0;
+  background: linear-gradient(112deg, #E3F1FB 6%, #FDE7F8 88%);
+  /* pastel blue to pink, matching your screenshot */
+  display: flex;
+  justify-content: center;
+}
+
+.hiringprocess-section {
+ 
+  max-width: auto;
+  border-radius: 15px;
+  margin: 0;
+  padding: 40px 20px 28px 20px;
+  text-align: center;
+  animation: fadeInCard 0.5s;
+}
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px; /* match or slightly more than your step-card-circle */
+  margin: 0 0px;
+  
+  
+}
+.step-arrow svg {
+  display: block;
+
+}
+@media (max-width: 900px) {
+  .hiringprocess-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-arrow {
+    height: 32px;
+    margin: 0 auto;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: scale(0.97);}
+  to { opacity: 1; transform: scale(1);}
+}
+
+.hiringprocess-title {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #233A41;
+  margin-bottom: 10px;
+}
+
+.hiringprocess-sub {
+  font-size: 1.02rem;
+  margin-bottom: 30px;
+  color: #78839b;
+}
+
+.hiringprocess-steps {
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 13px;
+  /* background: #fff; */
+  margin-bottom: 0;
+  padding: 0;
+  width: 170px;
+  transition: box-shadow 0.18s, transform 0.21s;
+  box-shadow: 0 2px 12px rgba(61,180,160,0.07);
+  position: relative;
+  outline: none;
+}
+
+.step-card.active,
+.step-card:hover,
+.step-card:focus {
+  box-shadow: 0 8px 28px rgba(61,180,160,0.12);
+  transform: translateY(-5px) scale(1.045);
+  background: #f5fcfa;
+}
+
+.step-card-circle {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #e8f8f6;
+  margin-bottom: 14px;
+  border: 3.2px solid #36c692;
+  box-shadow: 0 2px 14px rgba(52,198,146,0.07);
+}
+.circle-color-1 { border-color: #2FC980; background: #ffffff;}
+.circle-color-2 { border-color: #2FC980; background: #ffffff;}
+.circle-color-3 { border-color:#2FC980; background: #ffffff;}
+.circle-color-4 { border-color: #2FC980; background: #ffffff;}
+
+.step-card-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.step-card-num {
+  position: absolute;
+  top: -17px;
+  right: -16px;
+  font-size: 1.23rem;
+  font-weight: 600;
+  border-radius: 50%;
+  background: #e6686d;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3.3px solid #fff;
+  box-shadow: 0 2px 8px rgba(230,104,109,0.13);
+}
+
+.step-card-info {
+  text-align: center;
+}
+
+.step-card-title {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #222d36;
+  font-size: 1rem;
+  margin-bottom: 3px;
+  letter-spacing: 0.03em;
+}
+.step-card-desc {
+  color: #7e8197;
+  font-size: 0.98rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.step-card-detail {
+  margin: 24px auto 2px auto;
+  background: #fbe9f6;
+  color: #289086;
+  border-radius: 9px;
+  font-size: 1.07rem;
+  padding: 18px 25px;
+  max-width: 500px;
+  box-shadow: 0 2px 16px rgba(230,104,109,0.07);
+  animation: fadeIn 0.2s;
+  text-align: left;
+}
+.step-card-detail h3 {
+  font-size: 1.15rem;
+  margin: 5px 0 6px 0;
+  color: #e6686d;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Styling */
+@media (max-width: 900px) {
+  .hiringprocess-steps {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-card {
+    width: 88vw;
+    min-width: 250px;
+    margin-bottom: 8px;
+  }
+  .step-card-circle {
+    width: 88px; height: 88px;
+  }
+  .step-card-img {
+    width: 35px; height: 35px;
+  }
+  .step-card-title {
+    font-size: 0.99rem;
+  }
+  .step-card-desc {
+    font-size: 0.93rem;
+  }
+  .hiringprocess-section {
+    padding: 16px 4px;
+  }
+}

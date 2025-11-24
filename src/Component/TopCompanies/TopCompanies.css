@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.topcompanies-bg-gradient {
+    width: 100%;
+    padding: 60px 0;
+    background: linear-gradient(120deg, #d1edff4e 0%, #fdc4e743 100%);
+    /* #E3F0FF is a bluish (top left), #FDE7F8 pinkish (bottom right) */
+    display: flex;
+    justify-content: center;
+}
+
+.topcompanies-section {
+
+    border-radius: 16px;
+    max-width: 1120px;
+    margin: 36px auto;
+    padding: 44px 28px 38px 28px;
+}
+
+.topcompanies-content {
+    display: flex;
+    gap: 36px;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 330px;
+}
+
+.topcompanies-illustration {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     mix-blend-mode: color-burn;
+}
+
+.topcompanies-illustration img {
+    width: 90%;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.topcompanies-main {
+    flex: 2.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.topcompanies-title {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: #233A41;
+    margin-bottom: 8px;
+}
+
+.topcompanies-body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #132A31;
+    margin-bottom: 22px;
+    margin-top: 0;
+    line-height: 1.38;
+}
+
+.topcompanies-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 26px;
+    margin-bottom: 16px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.07rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #132A31;
+    /* background: #f8fdfb; */
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.19s, box-shadow 0.18s, color 0.16s;
+    box-shadow: 0 2px 9px rgba(58, 180, 140, 0.04);
+    border: 1.7px solid transparent;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.feature-check {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
+
+.feature-item .feature-check svg {
+    display: block;
+}
+
+.feature-title {
+    flex: 1;
+    letter-spacing: 0.01em;
+    font-size: 1.07rem;
+}
+
+.feature-item.active,
+.feature-item:focus,
+.feature-item:hover {
+    background: #e8fcf4;
+    color: #10704d;
+    border-color: #34c397;
+    box-shadow: 0 3px 18px rgba(58, 180, 140, 0.09);
+}
+
+.topcompanies-detail {
+    background: #e8fcf4;
+    color: #10704d;
+    border-radius: 10px;
+    margin-top: 16px;
+    padding: 20px 18px;
+    box-shadow: 0 6px 24px rgba(30, 180, 170, 0.10);
+    font-size: 1.05rem;
+    animation: fadeIn 0.21s;
+}
+
+.topcompanies-detail h4 {
+    margin-top: 0;
+    color: #168567;
+    font-size: 1.18rem;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* responsive styling  */
+
+@media (max-width: 900px) {
+  .topcompanies-bg-gradient {
+    padding: 32px 0;
+  }
+
+  .topcompanies-section {
+    padding: 15px 2px;
+    margin: 0;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(70,140,140,0.09);
+  }
+
+  .topcompanies-content {
+    flex-direction: column;
+    gap: 18px;
+    min-height: unset;
+    align-items: stretch;
+  }
+
+  .topcompanies-illustration {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    mix-blend-mode: color-burn;
+    
+  }
+  .topcompanies-illustration img {
+    min-width: 400px;
+    max-width: 400px;
+    width: 55vw;
+   
+  }
+
+  .topcompanies-main {
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 6vw;
+  }
+
+  .topcompanies-title {
+    font-size: 1.51rem;
+    line-height: 1.9rem;
+    margin-bottom: 6px;
+    text-align: left;
+    text-align: center;
+  }
+  .topcompanies-body {
+    font-size: 0.96rem;
+    margin-bottom: 15px;
+  }
+
+  .topcompanies-features {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .feature-item {
+    font-size: 0.98rem;
+    padding: 10px 14px;
+    margin-bottom: 0;
+    min-height: 44px;
+    align-items: center;
+    justify-content: left;
+    border-radius: 9px;
+  }
+
+  .topcompanies-detail {
+    padding: 14px 10px;
+    font-size: 0.99rem;
+    margin-bottom: 7px;
+  }
+  .topcompanies-detail h4 {
+    font-size: 1.01rem;
+  }
+}
